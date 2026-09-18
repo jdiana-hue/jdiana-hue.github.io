@@ -112,6 +112,24 @@ ul {
   margin-bottom: 24px;
 }
 
+/* ---------- About row (headshot + intro) ---------- */
+.about-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 10px;
+}
+
+.headshot {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--crimson);
+  flex-shrink: 0;
+  background: var(--light);
+}
+
 /* ---------- Skills strip ---------- */
 .skills-strip {
   display: flex;
@@ -284,5 +302,16 @@ footer a {
 
   main {
     padding-top: 130px;
+  }
+
+  .about-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .headshot {
+    width: 130px;
+    height: 130px;
   }
 }
